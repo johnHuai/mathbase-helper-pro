@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "status": "experimental_metadata",
+  "notice": "These files describe routing and prerequisites, not complete theorem libraries.",
+  "packages": ["analysis", "algebra", "geometry", "topology", "number-theory", "pde", "probability", "discrete-math", "foundations", "applied-math", "mathematical-physics", "frontier-math"]
+}

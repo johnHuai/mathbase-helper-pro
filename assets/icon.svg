@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="MathBaseHelper Next">
+  <rect width="256" height="256" rx="54" fill="#17324d"/>
+  <path d="M60 70h130v25h-83l47 33-47 35h83v25H60v-25l54-35-54-33z" fill="#f1f5f9"/>
+  <circle cx="193" cy="62" r="22" fill="#52c6b4"/>
+  <path d="M193 51v22m-11-11h22" stroke="#17324d" stroke-width="6" stroke-linecap="round"/>
+</svg>

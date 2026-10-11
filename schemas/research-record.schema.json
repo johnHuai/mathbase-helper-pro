@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MathBaseHelper Next research record",
+  "type": "object",
+  "required": ["project_id", "question", "updated_at", "claims", "open_obligations"],
+  "properties": {
+    "project_id": {"type": "string", "minLength": 1},
+    "question": {"type": "string", "minLength": 1},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "assumptions": {"type": "array", "items": {"type": "string"}},
+    "claims": {"type": "array", "items": {"type": "object", "required": ["statement", "status", "evidence"], "properties": {"statement": {"type": "string"}, "status": {"enum": ["Unverified", "Draft Proof", "Reviewed Proof", "Computation Supported", "Formally Checked"]}, "evidence": {"type": "array", "items": {"type": "string"}}}}},
+    "sources": {"type": "array", "items": {"type": "string"}},
+    "experiments": {"type": "array", "items": {"type": "string"}},
+    "failed_attempts": {"type": "array", "items": {"type": "string"}},
+    "open_obligations": {"type": "array", "items": {"type": "string"}},
+    "next_actions": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}

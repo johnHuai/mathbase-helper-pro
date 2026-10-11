@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "illustrative_sample",
+  "nodes": [
+    {"id":"proof-basics","name":"证明与量词","domain":"foundations","difficulty":"introductory","prerequisites":[],"completion":"能写出带正确量词的直接证明和反例"},
+    {"id":"linear-algebra","name":"线性代数","domain":"algebra","difficulty":"undergraduate","prerequisites":["proof-basics"],"completion":"能证明秩零化度定理并处理特征值重数"},
+    {"id":"real-analysis","name":"实分析","domain":"analysis","difficulty":"undergraduate","prerequisites":["proof-basics"],"completion":"能检查极限交换与一致收敛的条件"},
+    {"id":"measure-theory","name":"测度与积分","domain":"analysis","difficulty":"advanced-undergraduate","prerequisites":["real-analysis"],"completion":"能准确使用 Fatou 与控制收敛定理"},
+    {"id":"topology","name":"点集拓扑","domain":"topology","difficulty":"undergraduate","prerequisites":["proof-basics"],"completion":"能证明紧致性与连续性的标准命题"},
+    {"id":"functional-analysis","name":"泛函分析","domain":"analysis","difficulty":"graduate","prerequisites":["linear-algebra","measure-theory","topology"],"completion":"能核对有界算子定理的空间条件"},
+    {"id":"sobolev","name":"Sobolev 空间","domain":"pde","difficulty":"graduate","prerequisites":["measure-theory","functional-analysis"],"completion":"能写出弱导数定义和基本嵌入的适用范围"},
+    {"id":"elliptic-pde","name":"椭圆型 PDE","domain":"pde","difficulty":"graduate","prerequisites":["sobolev","functional-analysis"],"completion":"能建立弱形式并核查能量估计与边界条件"}
+  ]
+}

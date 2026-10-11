@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "adapters": [
+    {"id":"python-sympy","status":"experimental","entry":"runtime/math-tool.mjs sympy","probe":"runtime/math-tool.mjs capabilities","operations":["factor","expand","simplify","diff","integrate"],"notes":"JSON expression tree only; no arbitrary Python or symbolic text evaluation."},
+    {"id":"lean4","status":"experimental","entry":"runtime/math-tool.mjs lean","probe":"runtime/math-tool.mjs capabilities","notes":"Checks a user-supplied Lean file in its project; mathematical correspondence and dependencies need separate review."},
+    {"id":"sage-pari-numpy-scipy-mpmath","status":"planned","notes":"No bundled executable adapter; use actual host tools only when available."},
+    {"id":"literature","status":"host_dependent","notes":"Use host-enabled search or user-provided authorized papers; no embedded API credentials."},
+    {"id":"obsidian","status":"unsupported","notes":"No automatic Vault access or settings changes; use a separately authorized host connector."},
+    {"id":"zotero","status":"unsupported","notes":"No bundled connection or credentials."}
+  ]
+}

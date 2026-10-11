@@ -51,4 +51,3 @@ SymPy 操作读取受限 JSON 表达式树；支持 `factor`、`expand`、`simpl
 - 质量门禁：`tests/` 与 `docs/verification.md`。运行 `node tests/validate.mjs`；还可运行 `node tests/runtime.test.mjs` 测试本地适配器边界。
 
 本次重构删除了旧的十六个独立模式入口，改为十二个可组合工作流。旧版资料留在历史发行包中，当前插件不再路由到旧模式。版本与能力状态见 [变更记录](CHANGELOG.md)。
-
