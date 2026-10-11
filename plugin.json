@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "mathbase-helper-pro",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "MathBaseHelper Next：模块化数学学习、证明审查与研究工作流；计算和形式化工具按实际可用性运行。",
   "author": {"name": "MathBaseHelper Contributors"},
   "keywords": ["mathematics", "proof", "formal-math", "research", "education"],
@@ -13,8 +13,8 @@
         "longDescription": "自动识别数学任务并组合 MathTutor、ProofForge、ProofAudit、FormalMath、MathCompute、MathVisual、PaperLab、ConjectureLab、MathPath、ResearchStudio、MathWrite 和 KnowledgeGraph 工作流。严格核对定义域、量词、定理条件、反例和边界情形，区分证明草稿、逻辑审查、计算支持与真实机器检查。随包提供十二个领域的路线元数据、学习依赖示例和受限本地工具适配器；高级领域不是完整定理库，Python/SymPy/Lean/绘图是否可执行由当前环境决定。论文检索、知识保存、Obsidian 与 Zotero 只通过实际可用且获授权的宿主工具使用；无后台服务或自动连接。",
         "developerName": "MathBaseHelper Contributors",
         "category": "Education",
-        "logo": "./assets/icon.svg",
-        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon-next.png",
+        "composerIcon": "./assets/icon-next.png",
         "defaultPrompt": [
           "启用 MathBaseHelper Next，介绍全部可用模块及其状态；我给出数学任务后自动选择工作流。",
           "用 ProofForge 证明我给出的命题，并用 ProofAudit 独立检查假设、逻辑和边界情形。",

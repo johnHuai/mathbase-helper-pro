@@ -16,7 +16,16 @@ assert.match(manifest.extensions['com.openai'].interface.defaultPrompt[0], /å…¨é
 for (const field of ['logo', 'composerIcon']) {
   const asset = manifest.extensions['com.openai'].interface[field];
   assert.match(asset, /^\.\/assets\/[a-z0-9.-]+$/);
-  assert.ok((await stat(join(root, asset))).isFile());
+  const path = join(root, asset);
+  const metadata = await stat(path);
+  assert.ok(metadata.isFile() && metadata.size <= 5 * 1024 * 1024);
+  if (asset.endsWith('.png')) {
+    const bytes = await readFile(path);
+    assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
+    const width = bytes.readUInt32BE(16), height = bytes.readUInt32BE(20);
+    assert.equal(width, height);
+    assert.ok(width >= 48 && width <= 4096);
+  }
 }
 
 const expected = ['mathbase-helper','math-tutor','proof-forge','proof-audit','formal-math','math-compute','math-visual','paper-lab','conjecture-lab','math-path','research-studio','math-write','knowledge-graph'];

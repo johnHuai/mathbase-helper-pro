@@ -1,4 +1,6 @@
-# MathBaseHelper Next 2.0.1
+# MathBaseHelper Next 2.0.2
+
+![MathBaseHelper Next 图标](assets/icon-next.png)
 
 **Learn Mathematics. Prove Rigorously. Explore the Unknown.**
 
